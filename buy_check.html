@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Informarket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <div class="header" style="text-align:left">
+    <div class="header-logo">
+      <a href="homepage.html"><img src="image/logo-sample.png" height="70" width="70"></a>
+    </div>
+    <nav class="header-list">
+      <ul class="header-list-right">
+        <li><a href="logout.html" id="header-right">LOGOUT</a></li>
+        <li><a href="mypage.html">MYPAGE</a></li>
+      </ul>
+      <br>
+      <ul class="header-list-left">
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="search.html">SEARCH</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+<body>
+
+  <a href="#" onclick="history.back(); return false;" class="btn_back">back</a>
+  <div class="buy_check">
+    <h1>購入内容確認</h1>
+    <br>
+    <br>
+    <label>所有ポイント:</label> <input id="Currentpoint" type="text" disabled="disabled"/>
+    <br>
+    <label>消費ポイント:</label> <input id="price" type="number" disabled="disabled"/>
+    <br>
+    <h3>商品内容</h3>
+    <label>商品名:</label> <input id="product_name"   type="text" disabled="disabled"/>
+    <br>
+    <br>
+    <label>商品説明:</label> <br>
+    <textarea name="product_describe" id="product_describe"  rows="11" cols="50" minlength="10" maxlength="500" disabled="disabled"/></textarea>
+    <br>
+
+    <br>
+    <p>購入を確定するには下のボタンをクリックしてください。</p>
+    <a id="buy" class="btn_primary" name="buy">購入を確定</a>
+  </div>
+</body>
+
+<script type="module" src="buy_check.js"></script>
+</html>

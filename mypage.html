@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Informarket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <div class="header" style="text-align:left">
+    <div class="header-logo">
+      <a href="homepage.html"><img src="image/logo-sample.png" height="100" width="100"></a>
+    </div>
+    <nav class="header-list">
+      <ul class="header-list-right">
+        <li><a href="logout.html" id="header-right">LOGOUT</a></li>
+        <li><a href="mypage.html">MYPAGE</a></li>
+      </ul>
+      <br>
+      <ul class="header-list-left">
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="search.html">SEARCH</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+
+<body>
+  <h1 style="text-align:center; animation: SlideUp 1.2s;">MY PAGE</h1>
+  <div class="mypage_body">
+    <label>Name</label> <input id="Username" type="text" size="20" disabled="disabled"/>
+    <label>E-mail</label> <input id="Email" type="text" size="25" disabled="disabled"/>
+    <label>Last Login</label> <input id="Last_login" type="text" size="20" disabled="disabled"/>
+    <label>Points</label> <input id="Userpoint" type="text" size="20" disabled="disabled"/>
+  </div>
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    <div class="menu-content">
+      <ul>
+        <li><a href="upload_file.html">投稿済みファイル一覧</a></li>
+        <li><a href="download_file.html">購入済みファイル一覧</a></li>
+        <li><a href="homepage.html">ホームページに戻る</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><a href="postform_sample.html" class="btn-post">＋</a>
+  </div>
+</body>
+<script type="module" src="mypage.js"> </script>
+</html>

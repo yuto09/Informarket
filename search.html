@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Informarket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <div class="header" style="text-align:left">
+    <div class="header-logo">
+      <a href="homepage.html"><img src="image/logo-sample.png" height="70" width="70"></a>
+    </div>
+    <nav class="header-list">
+      <ul class="header-list-right">
+        <li><a href="logout.html" id="header-right">LOGOUT</a></li>
+
+        <li><a href="mypage.html">MYPAGE</a></li>
+      </ul>
+      <br>
+      <ul class="header-list-left">
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="search.html">SEARCH</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+<body>
+  <h1 style="text-align: center;">S E A R C H</h1>
+  <!--<form action="signin.html" method="get" class="search_box">
+    <input type="text" id="search-bar" placeholder="keywords">
+    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  </form>-->
+  <table class="catalog" width="700">
+  <tbody>
+    <tr>
+      <form  method="get" class="search_box">
+        <div class="row">
+          <div class="tag_tag">
+            <select class="custom-select w-25" title="タグ" name="tag" id="tag">
+              <option selected="">タグを選択</option>
+              <option value="人文社会学部">人文社会学部</option>
+              <option value="法学部">法学部</option>
+              <option value="経済経営学部">経済経営学部</option>
+              <option value="理学部">理学部</option>
+              <option value="都市環境学部">都市環境学部</option>
+              <option value="システムデザイン学部">システムデザイン学部</option>
+              <option value="健康福祉学部">健康福祉学部</option>
+            </select>
+          </div>
+        </div>
+        <a href="#" id="search"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+      </form>
+    </tr>
+    </tbody>
+    <tr class="table_one">
+    <tbody id="catalog">
+
+    </tbody>
+    </tr>
+  </table>
+  <br><br><a href="postform_sample.html" class="btn-post">＋</a>
+</body>
+
+<script type="module" src="search.js"></script>
+</html>

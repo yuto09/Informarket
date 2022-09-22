@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Informarket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <div class="header" style="text-align:left">
+    <div class="header-logo">
+      <a href="homepage.html"><img src="image/logo-sample.png" height="70" width="70"></a>
+    </div>
+    <nav class="header-list">
+      <ul class="header-list-right">
+        <li><a href="logout.html" id="header-right">LOGOUT</a></li>
+
+        <li><a href="mypage.html">MYPAGE</a></li>
+      </ul>
+      <br>
+      <ul class="header-list-left">
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="search.html">SEARCH</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+<body>
+  <a href="#" onclick="history.back(); return false;" class="btn_back">back</a>
+  <br><br><br>
+  <div class="product_title">
+    <h1>商品編集</h1>
+    <br>
+    <img id="image" src="#" height="250">
+  </div>
+  <div class="product_edit">
+    <label>商品名:　　　　</label> <input id="product_name" type="text"/>
+    <br>
+    <label>ユーザー名:　　</label> <input id="producer" type="text" disabled="disabled"/>
+    <br>
+    <label>アップロード日:</label> <input id="date" type="text" disabled="disabled"/>
+    <br>
+    <label>商品説明:</label> <br>
+    <textarea name="product_describe" id="product_describe"  rows="11" cols="50" minlength="10" maxlength="500"></textarea>
+    <br>
+    <label>消費ポイント:</label> <input id="price" type="number">
+    <br>
+
+    <div class="text-center my-5">
+    </div>
+  </div>
+  <button type="submit" id="btn_primary" class="btn_buy" > 内容を更新する</button>
+  
+  
+  
+</body>
+<script type="module" src="myproduct_edit.js"></script>
+</html>

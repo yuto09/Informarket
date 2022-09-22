@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Informarket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <div class="header" style="text-align:left">
+    <div class="header-logo">
+      <a href="homepage.html"><img src="image/logo-sample.png" height="70" width="70"></a>
+    </div>
+    <nav class="header-list">
+      <ul class="header-list-right">
+        <li><a href="logout.html" id="header-right">LOGOUT</a></li>
+
+        <li><a href="mypage.html">MYPAGE</a></li>
+      </ul>
+      <br>
+      <ul class="header-list-left">
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="search.html">SEARCH</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+<body>
+  <a href="#" onclick="history.back(); return false;" class="btn_back">back</a>
+  <br><br><br>
+  <div class="product_title">
+    <h1>商品詳細</h1>
+    <br>
+    <img id="image" src="#" height="250">
+  </div>
+  <div class="product_detail">
+    <label>商品名:　　　　</label> <input id="product_name" type="text" disabled="disabled"/>
+    <br>
+    <label>ユーザー名:　　</label> <input id="producer" type="text" disabled="disabled"/>
+    <br>
+    <label>アップロード日:</label> <input id="date" type="text" disabled="disabled"/>
+    <br>
+    <label>商品説明:</label> <br>
+    <textarea name="product_describe" id="product_describe"  rows="11" cols="50" minlength="10" maxlength="500" disabled="disabled"></textarea>
+    <br>
+    <label>消費ポイント:</label> <input id="price" type="number" disabled="disabled"/>
+    <br>
+    <div class="rate-result">
+      <input value="" id="rate_number" type="number" disabled="disabled"/>
+      <input id="star5" type="radio" name="rate" value="5" disabled="disabled"/>
+      <label class="s5" for="star5">★</label>
+      <input id="star4" type="radio" name="rate" value="4" disabled="disabled"/>
+      <label class="s4" for="star4">★</label>
+      <input id="star3" type="radio" name="rate" value="3" disabled="disabled"/>
+      <label class="s3" for="star3">★</label>
+      <input id="star2" type="radio" name="rate" value="2" disabled="disabled"/>
+      <label class="s2" for="star2">★</label>
+      <input id="star1" type="radio" name="rate" value="1" disabled="disabled"/>
+      <label class="s1" for="star1">★</label>
+    </div>
+
+    <div class="text-center my-5">
+    </div>
+  </div>
+  <button type="submit" id="btn_primary" class="btn_look" > ファイルを閲覧する</button>
+  <button type="submit" id="btn_primary2" class="btn_edit"> ファイルを編集する</button>
+  
+  
+  
+</body>
+<script type="module" src="myproduct_detail.js"></script>
+</html>
